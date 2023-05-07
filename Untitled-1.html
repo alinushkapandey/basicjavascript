@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Medicine Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Medicine Recommendation System</h1>
+    <form>
+      <label for="symptoms">Enter your symptoms:</label>
+      <textarea id="symptoms" name="symptoms" rows="5" cols="50"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="recommendations"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#recommendations {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+#recommendations h2 {
+  margin-bottom: 10px;
+}
+
+#recommendations ul {
+  list-style: none;
+  padding: 0;
+}
+
+#recommendations li {
+  margin-bottom: 5px;
+}
+const medicines = [...] // List of medicines
+const ingredients = [...] // List of active ingredients
+const indications = [...] // List of indications
+const side_effects = [...] // List of side effects
+const contraindications = [...] // List of contraindications
+const dosages = [...] // List of dosages
+
+const form = document.querySelector('form')
+const symptomsInput = document.querySelector('#symptoms')
+const recommendations = document.querySelector('#recommendations')
+
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  const symptoms = symptomsInput.value
+  const recommendedMedicines = getRecommendedMedicines(symptoms)
+  showRecommendations(recommendedMedicines)
+})
+
+function getRecommendedMedicines(symptoms) {
+  // TODO: Write code to recommend medicines based on the user's symptoms
+  // This may involve using machine learning algorithms or rule-based systems
+  return [...medicines] // For now, just return a copy of the list of medicines
+}
+
+function showRecommendations(medicines) {
+  recommendations.innerHTML = ''
+  if (medicines.length === 0) {
+    const message = document.createElement('p')
+    message.textContent = 'No recommended medicines found.'
+    recommendations.appendChild(message)
+  } else {
+    const heading = document.createElement('h2')
+    heading.textContent = 'Recommended Medicines'
