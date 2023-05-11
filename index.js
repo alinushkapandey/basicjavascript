@@ -190,3 +190,109 @@
 //               default:
 //                 console.log("weather ramro xaina");       
 //             }
+ //dom(document object model);
+//   const title =document.getElementById("mytitle");
+//   title.innerText= "parul ";
+//   title.style.backgroundColor="blue";
+//   title.style.color="red";
+//   title.style.cursor="pointer";
+
+// loop
+//1. for loop
+// for(let i= 1; i<=10; i++){
+//     console.log(i);
+// }
+    //sum of 10 postive numbers
+//    let sum =0;
+//     for(let i=1; i<=10; i++){
+//         sum +=i;
+
+
+//     }
+//     console.log(sum);
+ //while loop
+   //let i=1;
+//    let sum =0;
+//     while (i<=10) {
+//        console.log(i);
+//         i++;
+    
+// }
+ //do while
+//  let i= 0;
+//  let sum = 0;
+//   do {
+//     sum+=i;
+//     i++;
+    
+//   } while (i <=10);
+//   console.log(sum);
+
+//array
+//  const arr =[2,4,6,7,8,9];
+//  const arr1= ["ram", "sita"];
+//  console.log(arr[2]);
+//  console.log(arr1);
+// const arr =[7,9,3,4,"gita"];
+// console.log(arr);
+// array methods(basic array method);
+//const arr=[6,3,4,5,7,9,1];
+//length
+//console.log(arr.length);
+
+//push
+// arr.push(23);
+// console.log(arr);
+ //pop
+// arr.pop();
+// console.log(arr);
+
+// arr.shift();
+// console.log(arr);
+
+// arr.unshift(99);
+// console.log(arr);
+//includes
+// const newarr= arr.includes(8);
+// console.log(arr);
+//console.log(newarr);
+
+//reverse
+// arr.reverse();
+// console.log(arr);
+//splice:it remove
+
+// arr.splice(1,3);
+// console.log(arr);
+//slice
+// const newarr = arr.slice(1,7);
+// console.log(arr);
+// console.log(newarr);
+
+// const newarr =arr.filter((n)=>n>3);
+// console.log(arr);
+// console.log(newarr);
+
+
+// let arr = [];
+// for(let i = 0; i<100; i++){
+//     arr[i]=i;
+//     //arr.push(i)
+// }
+// console.log(arr);
+
+//object
+const profile ={
+    firstName:"Ram bahadur",
+    lastName:"Badal",
+    age:66,
+    job:"minster",
+    issalary:10000000,
+    issingle: function(){
+        console.log("lutana sakya loot");
+        return true;s
+    },
+};
+console.log(profile);
+
+  
