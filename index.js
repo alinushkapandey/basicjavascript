@@ -282,17 +282,106 @@
 // console.log(arr);
 
 //object
-const profile ={
-    firstName:"Ram bahadur",
-    lastName:"Badal",
-    age:66,
-    job:"minster",
-    issalary:10000000,
-    issingle: function(){
-        console.log("lutana sakya loot");
-        return true;s
-    },
-};
-console.log(profile);
+// const profile ={
+//     firstName:"Ram bahadur",
+//     lastName:"Badal",
+//     age:66,
+//     job:"minster",
+//     issalary:10000000,
+//     issingle: function(){
+//         console.log("lutana sakya loot");
+//         return true;s
+//     },
+// };
 
+//console.log(profile)
+
+// function myfunc(){
+//     let x=2;
+//     let y=8;
+//     let ans= x+y;
+//     console.log(ans);
+// }
+// myfunc();
+
+//function are building block of the language used to encopsulate reusable logic.
+// scoping 
+// scoping determines the visibility variables, function , and object in some particular code.
+// it has two types of scopes: 
+//global scope:variables declared out side of any function .
+//local scope: variables declared inside of the function.
+// var :global scope or function scope;
+//let,const:block scope, they r local scope;
+// dom:Document object model;
+//dom refers to the programming interface for html ,xml documents;
+// dom manuplate the content of a web page dynamically using javascript;
+// dom represents the structue of a documents as a tree- like hierarchy of objects.
+
+// functions
+// function name() {
+//   console.log("ram bahadur");
+// }
+//  name();
+// function add() {
   
+//   let x=9;
+//   let y=2;
+//   let ans=x+y;
+//   console.log(ans);
+// }
+// add();
+//parameters & arguments in function
+
+// function sum(a,b,c){
+//   let results= a+b+c /2;
+//   console.log(results);
+// }
+// sum(9,3,0);
+
+//return type
+// function sum(a,b){
+//   let ans= a+b;
+//   return ans;
+// }
+//  const result = sum(5,4)
+// console.log(result);
+
+// function greeting( name,address){
+//   console.log(`my name is ${name}.i live at ${address}`);
+// }
+// greeting("ali", "mahendranagr");
+ 
+// function sum(arr=[]){
+//  let sum=0;
+//  for(let i= 0; i<arr.length; i++){
+//  sum +=arr[i];
+//  }
+// return sum;
+// }
+
+// const ans= sum ([1,2,4,6,7,8,9,0,])
+//  console.log(ans);
+
+//scoping
+
+
+// var x=9;
+// console.log(x);
+// function scope(){
+//   let y= 8+8;
+//   console.log(x);
+//   console.log(y);
+// }
+// scope();
+ 
+// function mysum(){
+//    let x= 10;
+//   if(x>5){
+//     console.log("x is greater than 15");
+//   }
+// }
+
+
+// mysum();
+  
+
