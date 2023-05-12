@@ -383,5 +383,13 @@
 
 
 // mysum();
+
+const name=(a,b)=>{
+  return a*b;
+
+}
+const ans=name(2,4);
+console.log(ans);
+
   
 
