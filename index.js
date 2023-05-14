@@ -384,12 +384,56 @@
 
 // mysum();
 
-const name=(a,b)=>{
-  return a*b;
+// const name=(a,b)=>{
+//   return a*b;
 
-}
-const ans=name(2,4);
-console.log(ans);
+// }
+// const ans=name(2,4);
+// console.log(ans);
 
   
+  //dom 
+  //dom manipulation
+  // advance array method;
 
+
+  //dom amnipulation
+ //console.log(document.body);
+ const myhow = document.getElementById("how");
+  const myIs=document.getElementsByClassName("is");
+ const myInput= document.getElementsByName("email");
+ const mySpan = document.getElementsByTagName("span");
+  const merobody=document.querySelector("#ali");
+  const mybutton= document.querySelector(".hey");
+    
+
+
+ 
+      
+  //button
+  mybutton.style.backgroundcolor="blue";
+  mybutton.style.color="black";
+  mybutton.style.padding="2vmax 4vmax";
+  mybutton.style.cursor="pointer";
+
+
+  //console.log(newData);
+//foe id
+
+  myhow.innerHTML  = 'why'
+   myhow.style.backgroundcolor="red" ;
+  // myhow.style.color="white";
+  //for class
+  myIs[0].innerHTML= "hello";
+  
+
+//using func
+function myadd(){
+
+
+const newH1= document.createElement("h1");
+newH1.innerHTML="yubalai bidesh jana bata rokaum!";
+document.body.prepend(newH1);
+}
+
+mybutton.onclick=myadd;
