@@ -399,41 +399,99 @@
 
   //dom amnipulation
  //console.log(document.body);
- const myhow = document.getElementById("how");
-  const myIs=document.getElementsByClassName("is");
- const myInput= document.getElementsByName("email");
- const mySpan = document.getElementsByTagName("span");
-  const merobody=document.querySelector("#ali");
-  const mybutton= document.querySelector(".hey");
+//  const myhow = document.getElementById("how");
+//   const myIs=document.getElementsByClassName("is");
+//  const myInput= document.getElementsByName("email");
+//  const mySpan = document.getElementsByTagName("span");
+//   const merobody=document.querySelector("#ali");
+//   const mybutton= document.querySelector(".hey");
     
 
 
  
       
-  //button
-  mybutton.style.backgroundcolor="blue";
-  mybutton.style.color="black";
-  mybutton.style.padding="2vmax 4vmax";
-  mybutton.style.cursor="pointer";
+//   //button
+//   mybutton.style.backgroundcolor="blue";
+//   mybutton.style.color="black";
+//   mybutton.style.padding="2vmax 4vmax";
+//   mybutton.style.cursor="pointer";
 
 
-  //console.log(newData);
-//foe id
+//   //console.log(newData);
+// //foe id
 
-  myhow.innerHTML  = 'why'
-   myhow.style.backgroundcolor="red" ;
+//   myhow.innerHTML  = 'why'
+//    myhow.style.backgroundcolor="red" ;
   // myhow.style.color="white";
   //for class
-  myIs[0].innerHTML= "hello";
+  // myIs[0].innerHTML= "hello";
   
 
 //using func
-function myadd(){
+// function myadd(){
 
 
-const newH1= document.createElement("h1");
-newH1.innerHTML="yubalai bidesh jana bata rokaum!";
-document.body.prepend(newH1);
-}
+// const newH1= document.createElement("h1");
+// newH1.innerHTML="yubalai bidesh jana bata rokaum!";
+// document.body.prepend(newH1);
+// }
 
-mybutton.onclick=myadd;
+// mybutton.onclick=myadd;
+
+
+//event listner : add to event in the html.
+// event listners are typically add to an elments using addeventlistner()method. 
+//which takes two arguments the type of event listner and this function to call .
+
+
+//addevent listner
+ const mytitle=document.getElementsByClassName("title");
+ const Box=document.getElementsByTagName("span");
+ console.log(Box[0]);
+  const button=document.getElementById("heyclick");
+ const myinput= document.querySelector("input")
+   
+  Box[0].style.padding="20px";
+  Box[0].style.color="white";
+  Box[0].style.backgroundColor="purple";
+
+  button.style.padding="2vmax 4vmax";
+  button.style.backgroundColor="gray";
+  button.style.color="white";
+  button.addEventListener("click",()=>{
+    mytitle[0].innerHTML="haina k ho yesto yo chakka parchu ";
+    mytitle[0].classList.add("mybox");
+    // mytitle[0].style.backgroundColor="red";
+    // mytitle[0].style.color="white";
+    
+  });
+ 
+
+  Box[0].addEventListener("mouseover",()=>{
+    mytitle[0].style.backgroundColor="yellow";
+  button.style.transform="scale(1.1)";
+  });
+  Box[0].addEventListener("mouseout",()=>{
+    button.style.transform="";
+    });
+    button.addEventListener("contextmenu",()=>{
+      e.preventDefault();
+      button.style.backgroundColor="crimson";
+    });
+    addEventListener("contextmenu",(e)=>{
+      e.preventDefault();
+      button.style.filter="blur(10px)";
+      
+
+    });
+    Box[0].addEventListener("dblclick",()=>{
+      document.body.style.backgroundColor="black";
+    });
+ Box[0].addEventListener("click", ()=>{
+  document.body.style.backgroundColor="white";
+
+ });
+    myinput.addEventListener("change",(e)=>{
+      console.log(e.target.value);
+    })
+
