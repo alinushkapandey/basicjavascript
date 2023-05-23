@@ -445,55 +445,74 @@
 
 
 //addevent listner
- const mytitle=document.getElementsByClassName("title");
- const Box=document.getElementsByTagName("span");
- console.log(Box[0]);
-  const button=document.getElementById("heyclick");
- const myinput= document.querySelector("input")
+//  const mytitle=document.getElementsByClassName("title");
+//  const Box=document.getElementsByTagName("span");
+//  console.log(Box[0]);
+//   const button=document.getElementById("heyclick");
+//  const myinput= document.querySelector("input")
    
-  Box[0].style.padding="20px";
-  Box[0].style.color="white";
-  Box[0].style.backgroundColor="purple";
+//   Box[0].style.padding="20px";
+//   Box[0].style.color="white";
+//   Box[0].style.backgroundColor="purple";
 
-  button.style.padding="2vmax 4vmax";
-  button.style.backgroundColor="gray";
-  button.style.color="white";
-  button.addEventListener("click",()=>{
-    mytitle[0].innerHTML="haina k ho yesto yo chakka parchu ";
-    mytitle[0].classList.add("mybox");
-    // mytitle[0].style.backgroundColor="red";
-    // mytitle[0].style.color="white";
+//   button.style.padding="2vmax 4vmax";
+//   button.style.backgroundColor="gray";
+//   button.style.color="white";
+//   button.addEventListener("click",()=>{
+//     mytitle[0].innerHTML="haina k ho yesto yo chakka parchu ";
+//     mytitle[0].classList.add("mybox");
+//     // mytitle[0].style.backgroundColor="red";
+//     // mytitle[0].style.color="white";
     
-  });
+//   });
  
 
-  Box[0].addEventListener("mouseover",()=>{
-    mytitle[0].style.backgroundColor="yellow";
-  button.style.transform="scale(1.1)";
-  });
-  Box[0].addEventListener("mouseout",()=>{
-    button.style.transform="";
-    });
-    button.addEventListener("contextmenu",()=>{
-      e.preventDefault();
-      button.style.backgroundColor="crimson";
-    });
-    addEventListener("contextmenu",(e)=>{
-      e.preventDefault();
-      button.style.filter="blur(10px)";
+//   Box[0].addEventListener("mouseover",()=>{
+//     mytitle[0].style.backgroundColor="yellow";
+//   button.style.transform="scale(1.1)";
+//   });
+//   Box[0].addEventListener("mouseout",()=>{
+//     button.style.transform="";
+//     });
+//     button.addEventListener("contextmenu",()=>{
+//       e.preventDefault();
+//       button.style.backgroundColor="crimson";
+//     });
+//     addEventListener("contextmenu",(e)=>{
+//       e.preventDefault();
+//       button.style.filter="blur(10px)";
       
 
-    });
-    Box[0].addEventListener("dblclick",()=>{
-      document.body.style.backgroundColor="black";
-    });
- Box[0].addEventListener("click", ()=>{
-  document.body.style.backgroundColor="white";
+//     });
+//     Box[0].addEventListener("dblclick",()=>{
+//       document.body.style.backgroundColor="black";
+//     });
+//  Box[0].addEventListener("click", ()=>{
+//   document.body.style.backgroundColor="white";
 
- });
-    myinput.addEventListener("change",(e)=>{
-      console.log(e.target.value);
-    })
-//math Object in javascript:properties and methods formathematical constant and functions. 
-//console.log(Math.round (4.6));
+//  });
+//     myinput.addEventListener("change",(e)=>{
+//       console.log(e.target.value);
+//     })
+// //math Object in javascript:properties and methods formathematical constant and functions. 
+// //console.log(Math.round (4.6));
 
+
+// setTimeout(()=>{
+
+//   console.log("hello world");
+// },5000);
+// setInterval(()=>{
+//   console.log("hello world");
+
+// },2000);
+// const button=document.querySelector("button");
+// const greeting=(name,age,income)=>{
+//   console.log(`my name is ${name}.my age is:${age}and my income is:{income}`);
+
+// };
+//  const closeTime=setInterval(greeting,2000,"ram",23,5000);
+// button.addEventListener("click",()=>{
+//   clearTimeout(closeTime);
+// })
+//oop

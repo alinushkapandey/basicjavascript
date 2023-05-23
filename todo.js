@@ -68,3 +68,12 @@ form.addEventListener("submit",(e)=>{
 ShowAlltask();
 });
  
+
+
+
+
+// SetTimeOut & SetTimeInterval
+//it is a javascript built-in  function which is use to set time:millisecond;
+
+
+
