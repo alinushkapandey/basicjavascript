@@ -495,5 +495,5 @@
       console.log(e.target.value);
     })
 //math Object in javascript:properties and methods formathematical constant and functions. 
-console.log(Math.round (4.6));
+//console.log(Math.round (4.6));
 
