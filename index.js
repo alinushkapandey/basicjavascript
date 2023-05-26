@@ -175,7 +175,7 @@
 //   default:
 //     console.log(" vetiyena hai naresau!");
 // }
-  
+
 // let weather= "winter";
 // switch(weather){
 //     case "rainny":
@@ -188,9 +188,9 @@
 //              console.log("the weather is in A2");
 //              break;
 //               default:
-//                 console.log("weather ramro xaina");       
+//                 console.log("weather ramro xaina");
 //             }
- //dom(document object model);
+//dom(document object model);
 //   const title =document.getElementById("mytitle");
 //   title.innerText= "parul ";
 //   title.style.backgroundColor="blue";
@@ -202,29 +202,28 @@
 // for(let i= 1; i<=10; i++){
 //     console.log(i);
 // }
-    //sum of 10 postive numbers
+//sum of 10 postive numbers
 //    let sum =0;
 //     for(let i=1; i<=10; i++){
 //         sum +=i;
 
-
 //     }
 //     console.log(sum);
- //while loop
-   //let i=1;
+//while loop
+//let i=1;
 //    let sum =0;
 //     while (i<=10) {
 //        console.log(i);
 //         i++;
-    
+
 // }
- //do while
+//do while
 //  let i= 0;
 //  let sum = 0;
 //   do {
 //     sum+=i;
 //     i++;
-    
+
 //   } while (i <=10);
 //   console.log(sum);
 
@@ -243,7 +242,7 @@
 //push
 // arr.push(23);
 // console.log(arr);
- //pop
+//pop
 // arr.pop();
 // console.log(arr);
 
@@ -272,7 +271,6 @@
 // const newarr =arr.filter((n)=>n>3);
 // console.log(arr);
 // console.log(newarr);
-
 
 // let arr = [];
 // for(let i = 0; i<100; i++){
@@ -305,9 +303,9 @@
 // myfunc();
 
 //function are building block of the language used to encopsulate reusable logic.
-// scoping 
+// scoping
 // scoping determines the visibility variables, function , and object in some particular code.
-// it has two types of scopes: 
+// it has two types of scopes:
 //global scope:variables declared out side of any function .
 //local scope: variables declared inside of the function.
 // var :global scope or function scope;
@@ -323,7 +321,7 @@
 // }
 //  name();
 // function add() {
-  
+
 //   let x=9;
 //   let y=2;
 //   let ans=x+y;
@@ -350,7 +348,7 @@
 //   console.log(`my name is ${name}.i live at ${address}`);
 // }
 // greeting("ali", "mahendranagr");
- 
+
 // function sum(arr=[]){
 //  let sum=0;
 //  for(let i= 0; i<arr.length; i++){
@@ -364,7 +362,6 @@
 
 //scoping
 
-
 // var x=9;
 // console.log(x);
 // function scope(){
@@ -373,14 +370,13 @@
 //   console.log(y);
 // }
 // scope();
- 
+
 // function mysum(){
 //    let x= 10;
 //   if(x>5){
 //     console.log("x is greater than 15");
 //   }
 // }
-
 
 // mysum();
 
@@ -391,45 +387,36 @@
 // const ans=name(2,4);
 // console.log(ans);
 
-  
-  //dom 
-  //dom manipulation
-  // advance array method;
+//dom
+//dom manipulation
+// advance array method;
 
-
-  //dom amnipulation
- //console.log(document.body);
+//dom amnipulation
+//console.log(document.body);
 //  const myhow = document.getElementById("how");
 //   const myIs=document.getElementsByClassName("is");
 //  const myInput= document.getElementsByName("email");
 //  const mySpan = document.getElementsByTagName("span");
 //   const merobody=document.querySelector("#ali");
 //   const mybutton= document.querySelector(".hey");
-    
 
-
- 
-      
 //   //button
 //   mybutton.style.backgroundcolor="blue";
 //   mybutton.style.color="black";
 //   mybutton.style.padding="2vmax 4vmax";
 //   mybutton.style.cursor="pointer";
 
-
 //   //console.log(newData);
 // //foe id
 
 //   myhow.innerHTML  = 'why'
 //    myhow.style.backgroundcolor="red" ;
-  // myhow.style.color="white";
-  //for class
-  // myIs[0].innerHTML= "hello";
-  
+// myhow.style.color="white";
+//for class
+// myIs[0].innerHTML= "hello";
 
 //using func
 // function myadd(){
-
 
 // const newH1= document.createElement("h1");
 // newH1.innerHTML="yubalai bidesh jana bata rokaum!";
@@ -438,11 +425,9 @@
 
 // mybutton.onclick=myadd;
 
-
 //event listner : add to event in the html.
-// event listners are typically add to an elments using addeventlistner()method. 
+// event listners are typically add to an elments using addeventlistner()method.
 //which takes two arguments the type of event listner and this function to call .
-
 
 //addevent listner
 //  const mytitle=document.getElementsByClassName("title");
@@ -450,7 +435,7 @@
 //  console.log(Box[0]);
 //   const button=document.getElementById("heyclick");
 //  const myinput= document.querySelector("input")
-   
+
 //   Box[0].style.padding="20px";
 //   Box[0].style.color="white";
 //   Box[0].style.backgroundColor="purple";
@@ -463,9 +448,8 @@
 //     mytitle[0].classList.add("mybox");
 //     // mytitle[0].style.backgroundColor="red";
 //     // mytitle[0].style.color="white";
-    
+
 //   });
- 
 
 //   Box[0].addEventListener("mouseover",()=>{
 //     mytitle[0].style.backgroundColor="yellow";
@@ -481,7 +465,6 @@
 //     addEventListener("contextmenu",(e)=>{
 //       e.preventDefault();
 //       button.style.filter="blur(10px)";
-      
 
 //     });
 //     Box[0].addEventListener("dblclick",()=>{
@@ -494,9 +477,8 @@
 //     myinput.addEventListener("change",(e)=>{
 //       console.log(e.target.value);
 //     })
-// //math Object in javascript:properties and methods formathematical constant and functions. 
+// //math Object in javascript:properties and methods formathematical constant and functions.
 // //console.log(Math.round (4.6));
-
 
 // setTimeout(()=>{
 
@@ -516,3 +498,13 @@
 //   clearTimeout(closeTime);
 // })
 //oop
+
+// // This function clear all the values
+// function clearScreen() {
+//   document.getElementById("result").value = "";
+// }
+// // This function display values
+// function display(value) {
+//   document.getElementById("result").value += value;
+// }
+// // This function evaluates th
