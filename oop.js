@@ -189,3 +189,6 @@
 // console.log(hey);
 // console.log(ramaccount);
 
+ //static property and method.
+
+ 

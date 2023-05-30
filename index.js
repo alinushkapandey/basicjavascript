@@ -508,3 +508,52 @@
 //   document.getElementById("result").value += value;
 // }
 // // This function evaluates th
+
+// class profile{
+//     constructor(name,age,income){
+//         this.name = name;
+//         this.age = age;
+//         this.income = income;
+//     }
+
+//     static sortByAge(user1 , user2){
+//         return user1.age - user2.age
+//     }
+// }
+
+// const user1 = new profile("ram", 23,2500);
+// const user2 = new profile("ali",3,5000);
+// const user3 = new profile("parul",15, 4000);
+
+// const users = [user1,user2,user3];
+// // users.sort((user1, user2)=>user1.age - user2.age);
+// // users.sort((user1 , user2)=>user1.income - user2.income);
+// users.sort(profile.sortByAge);
+// console.log(users);
+
+class circle{
+    constructor(radius){
+        this.radius = radius;
+    }
+// instance method;
+calculatearea(){
+    return Math.PI * this.radius * this.radius;
+}
+
+
+    //static method
+    static compareByNumber(rad1 , rad2){
+        return rad1-rad2;
+    }
+    //properties
+    static defaultvalue = 3; 
+}
+const rad1 = new circle(8);
+const rad2 = new circle(4);
+
+console.log(rad1, rad2);
+console.log(circle.defaultvalue);
+console.log(circle.compareByNumber(9, 5));
+
+
+console.log(rad1.calculatearea());
