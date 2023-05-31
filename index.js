@@ -531,29 +531,54 @@
 // users.sort(profile.sortByAge);
 // console.log(users);
 
-class circle{
-    constructor(radius){
-        this.radius = radius;
-    }
-// instance method;
-calculatearea(){
-    return Math.PI * this.radius * this.radius;
-}
+// class circle{
+//     constructor(radius){
+//         this.radius = radius;
+//     }
+// // instance method;
+// calculatearea(){
+//     return Math.PI * this.radius * this.radius;
+// }
 
 
-    //static method
-    static compareByNumber(rad1 , rad2){
-        return rad1-rad2;
-    }
-    //properties
-    static defaultvalue = 3; 
-}
-const rad1 = new circle(8);
-const rad2 = new circle(4);
+//     //static method
+//     static compareByNumber(rad1 , rad2){
+//         return rad1-rad2;
+//     }
+//     //properties
+//     static defaultvalue = 3; 
+// }
+// const rad1 = new circle(8);
+// const rad2 = new circle(4);
 
-console.log(rad1, rad2);
-console.log(circle.defaultvalue);
-console.log(circle.compareByNumber(9, 5));
+// console.log(rad1, rad2);
+// console.log(circle.defaultvalue);
+// console.log(circle.compareByNumber(9, 5));
 
 
-console.log(rad1.calculatearea());
+// console.log(rad1.calculatearea());
+
+// let i= 8;
+// let j = 20;
+// function sum(a,b){
+//     return a+b;
+// }
+ 
+// const result = sum(i , j);
+// console.log(result);
+
+
+//execcution context & execution stack;
+//asynchronous & synchronous
+
+
+console.log("hello world !");
+console.log("hey alinushka");
+
+setTimeout(()=>{
+    console.log("ruko  jara abarkaro");
+}, 5000);
+ setTimeout(()=>{
+    console.log("haina chhaka parchu");
+ }, 2000);
+  console.log("how are you");
