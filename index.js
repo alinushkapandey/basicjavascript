@@ -572,13 +572,97 @@
 //asynchronous & synchronous
 
 
-console.log("hello world !");
-console.log("hey alinushka");
+// console.log("hello world !");
+// console.log("hey alinushka");
 
+// setTimeout(()=>{
+//     console.log("ruko  jara abarkaro");
+// }, 5000);
+//  setTimeout(()=>{
+//     console.log("haina chhaka parchu");
+//  }, 2000);
+//   console.log("how are you");
+
+// call back function;
+
+
+// alert("hello world");
+// console.log("task1");
+// console.log("task2");
+// console.log("task3");
+
+
+
+//callback function and callstack hell
+
+
+// function sum(a,b ,Callback){
+//     const result = a + b;
+//     Callback(result);
+
+// }
+// //console.log(sum(3,6));
+// function added(result){
+//     const h1 = document.querySelector("h1");
+//     h1.innerText = result;
+
+// }
+// sum(4,6, added);
+
+// let a = [1,3,4,6,7,8,9];
+// function calculations(a = [],callback){
+//     let ans = [];
+//     for (let i = 0; i<a.length; i++){
+//         const elments =  callback(a[i])
+//         ans.push(elments);
+//     }
+//     console.log(ans);
+// }
+
+// function multiply(a){
+//     return a*10;
+// }
+// function divide(a){
+//     return a/ 10;
+// }
+
+// calculations(a, multiply);
+// calculations(a, divide);
+// calculations(a,(a)=>a-10);
+// calculations(a,(a)=> a+10);
+
+// calculations(a,(a)=> a*10);
+// calculations(a,(a)=> a/10);
+
+
+//promises in js
+
+
+// const a = new Promise((resolve,reject)=>{
+//     let sucess = false;
+    
+//    if (sucess) resolve("promise fulfilled!");
+//    else reject("technical error");
+// });
+// a.then((a)=>console.log(a)).catch ((error) =>console.log(error));
+
+
+console.log("hello world");
 setTimeout(()=>{
-    console.log("ruko  jara abarkaro");
-}, 5000);
- setTimeout(()=>{
-    console.log("haina chhaka parchu");
- }, 2000);
-  console.log("how are you");
+    console.log("anny");
+},2000);
+function fetchedData(){
+fetch("https://catfact.ninja/fact")
+.then((res)=>res.json())
+.then((data) => console.log(data))
+.catch((error)=> console.log(error));
+}
+fetchedData();
+console.log("haina k ho yesto");
+
+
+
+
+
+
+
