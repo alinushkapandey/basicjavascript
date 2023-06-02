@@ -647,18 +647,59 @@
 // a.then((a)=>console.log(a)).catch ((error) =>console.log(error));
 
 
-console.log("hello world");
-setTimeout(()=>{
-    console.log("anny");
-},2000);
-function fetchedData(){
-fetch("https://catfact.ninja/fact")
-.then((res)=>res.json())
-.then((data) => console.log(data))
-.catch((error)=> console.log(error));
-}
-fetchedData();
-console.log("haina k ho yesto");
+// console.log("hello world");
+// setTimeout(()=>{
+//     console.log("anny");
+// },2000);
+// function fetchedData(){
+// fetch("https://catfact.ninja/fact")
+// .then((res)=>res.json())
+// .then((data) => console.log(data))
+// .catch((error)=> console.log(error));
+// }
+// fetchedData();
+// console.log("haina k ho yesto");
+
+// let arr = [];
+
+// const fetchedData = ()=> {
+//     return new Promise ((resolve, reject)=>{
+//         setTimeout(()=> {
+//             arr.push({name:"ram",age:23 });
+//             if ( arr.length > 0) resolve("Data fetched");
+//             else reject ("some technical erroe!");
+//         },2000);
+//     });
+// };
+
+// fetchedData()
+// .then((message)=>console.log(message))
+// .catch((error)=>console.log(error))
+// .finally(()=>console.log("dubai tira mah"));
+
+
+//json and fetch api
+
+//const url = "https://catfact.ninja/fact";
+//  const h1 = document.querySelector("h1");
+// // const fetchedData = ()=>{
+// //     fetch(url).then((res)=> res.json())
+// //     .then((data)=> h1.innerHTML= data.fact)
+// //     .catch((error)=> console.log(error))
+
+// // };
+// // fetchedData();
+// //Async and await IN JAVASCRIPT
+// const fetchedData = async ()=>{
+//     try{
+//         const res =  await fetch(url);
+//     const data = await res.json();
+//     h1.innerHTML = data .fact ;
+//     }catch(error){
+//         console.log(error);
+//     }
+// };
+// fetchedData();
 
 
 
