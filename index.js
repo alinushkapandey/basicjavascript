@@ -701,6 +701,33 @@
 // };
 // fetchedData();
 
+//usa data apis
+const url = "https://api.zippopotam.us/us/33162";
+const h1 = document.querySelector("h1");
+const h2 = document.querySelector("h2");
+const h3 = document.querySelector("h3");
+
+ const fetchedData =  async()=>{
+     try{
+         const res =  await fetch(url);
+         const data =  await res.json();
+        
+         const {country , places} = data; 
+         places.map((value,index) =>( (h2.innerHTML = value.longitude),(h3.innerHTML=value.state)));
+         console.log(data.places);
+         h1.innerhtml = country;
+         
+
+
+
+
+     }catch(error){
+         console.log(error);
+     }
+ };
+ fetchedData();
+
+
 
 
 
